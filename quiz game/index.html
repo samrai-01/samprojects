@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA Software Engineering Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <h1>🖥️ BCA Software Engineering Quiz</h1>
+            <p class="intro-text">
+                Test your knowledge with 10 challenging Software Engineering questions!
+            </p>
+            <button id="start-btn" class="start-btn">🚀 Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="question-info">
+                    Q: <span id="current-question">1</span> / <span id="total-questions">10</span>
+                </div>
+                <div class="question-info">
+                    Score: <span id="score">0</span>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <div id="question-text"></div>
+            <div id="answers-container" class="answers-grid"></div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen">
+            <h1>🎉 Quiz Completed!</h1>
+            <div class="result-stats">
+                <div class="result-stat">
+                    <span id="final-score">0</span>
+                    <div>Your Score</div>
+                </div>
+                <div class="result-stat">
+                    <span id="max-score">10</span>
+                    <div>Max Score</div>
+                </div>
+            </div>
+            <div id="result-message">Good job!</div>
+            <button id="restart-btn" class="restart-btn">🔄 Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
